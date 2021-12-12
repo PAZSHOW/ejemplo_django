@@ -1,0 +1,28 @@
+{%extends 'base.html' %}
+
+{%block titulo%} Contactos_prueba {%endblock%}
+{%block contenido%}
+
+<h1>Contacto:</h1>
+    <p>Nombre: Pablo Zambra</p>
+    </p> Telefono: 789456</p>
+    <p>Direccion: Belgrano 999</p>
+    <p>{{nombre}}</p>
+    <p>{{lista_de_numeros}}</p>
+    {%for x in lista_de_numeros%}
+        {%if x > 1500 %}
+        <p>Su numero supero lo establecido</p>
+        {%else%}
+        <p>Su numero no supera lo establecido</p>
+        {%endif%}
+
+    <p>Hola: {{x}}</p>
+    {%endfor%}
+    {%if edad > 18%} 
+        <p> Es mayor de edad</p>
+    {%else%}
+        <p>Es menor de edad</p>
+    {%endif%}
+
+{%endblock%}
+

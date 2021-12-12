@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block titulo%} Titulo_por_defecto {%endblock%}</title>
+</head>
+<body>
+
+    <nav>  
+        <a href="/">Pagina de inicio</a>
+        <a href="{%url 'saludo'%}"> Pagina de bienvenida</a>
+        <a href="{%url 'contacto'%}"> Pagina de contacto</a>
+    <nav> 
+    
+{%block contenido%}
+Contenido por defecto
+{%endblock%}
+
+
+<fooster>Hecho por Pablo Zambra</fooster>
+</body>
+</html>
